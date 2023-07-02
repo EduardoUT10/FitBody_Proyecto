@@ -28,7 +28,7 @@ namespace FitBody_Proyecto
             List<FitBody_Proyecto.Datos> posts = JsonConvert.DeserializeObject<List<FitBody_Proyecto.Datos>>(content);
             _post = new ObservableCollection<FitBody_Proyecto.Datos>(posts);
 
-            MyListView.ItemsSource = posts;
+            MyListView.ItemsSource = _post;
         }
     }
 }

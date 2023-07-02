@@ -17,16 +17,16 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label x:Name="lblcalentamiento" Text="{Binding calentamiento}">
-                            </Label>
-                            <Label x:Name="lblcardio" Text="{Binding cardio}">
-                            </Label>
-                            <Label x:Name="lbltonificacion" Text="{Binding tonificacion}">
-                            </Label>
-                            <Label x:Name="lblpiernas" Text="{Binding piernas}">
-                            </Label>
-                            <Label x:Name="lblestiramiento" Text="{Binding estiramiento}">
-                            </Label>
+                            <Label x:Name="lblcalentamiento" Text="{Binding calentamiento}"/>
+                            
+                            <Label x:Name="lblcardio" Text="{Binding cardio}"/>
+                            
+                            <Label x:Name="lbltonificacion" Text="{Binding tonificacion}"/>
+                            
+                            <Label x:Name="lblpiernas" Text="{Binding piernas}"/>
+                            
+                            <Label x:Name="lblestiramiento" Text="{Binding estiramiento}"/>
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
