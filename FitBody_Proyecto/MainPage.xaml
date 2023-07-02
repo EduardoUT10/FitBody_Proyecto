@@ -17,9 +17,15 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label x:Name="lblnombre" Text="{Binding nombre}">
+                            <Label x:Name="lblcalentamiento" Text="{Binding calentamiento}">
                             </Label>
-                            <Label x:Name="lblapellido" Text="{Binding apellido}">
+                            <Label x:Name="lblcardio" Text="{Binding cardio}">
+                            </Label>
+                            <Label x:Name="lbltonificacion" Text="{Binding tonificacion}">
+                            </Label>
+                            <Label x:Name="lblpiernas" Text="{Binding piernas}">
+                            </Label>
+                            <Label x:Name="lblestiramiento" Text="{Binding estiramiento}">
                             </Label>
                         </StackLayout>
                     </ViewCell>
