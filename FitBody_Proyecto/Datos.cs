@@ -14,4 +14,11 @@ namespace FitBody_Proyecto
         public int estiramiento { get; set; }
 
     }
+
+    class Ws
+    {
+        internal class Datos
+        {
+        }
+    }
 }
