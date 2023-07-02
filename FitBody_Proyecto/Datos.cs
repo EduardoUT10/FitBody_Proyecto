@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FitBody_Proyecto
 {
-     class Datos
+     internal class Datos
     {
         public int codigo { get; set; }
         public string calentamiento { get; set; }

@@ -4,35 +4,62 @@
              x:Class="FitBody_Proyecto.MainPage">
 
     <StackLayout>
-        <Label Text="Consumir web service Get" FontSize="20" HorizontalTextAlignment="Center">
-        </Label>
+        <Label Text="Consumir web service Get" FontSize="20" HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text ="codigo" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="0"/>
+            <Label Text ="calentamiento" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text ="cardio" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="2"/>
+
+            <Label Text ="tonificacion" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="3"/>
+
+            <Label Text ="piernas" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="4"/>
+
+            <Label Text ="estiramiento" TextColor="Red" FontSize="8" Grid.Row="0" Grid.Column="5"/>
+        </Grid>
         <Label x:Name="texto" Text="">
         </Label>
-        <Button Text="Consultar"
-                x:Name="btnGet"
-                Clicked="btnGet_Clicked">
-        </Button>
         <ListView x:Name="MyListView" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label x:Name="lblcalentamiento" Text="{Binding calentamiento}"/>
-                            
-                            <Label x:Name="lblcardio" Text="{Binding cardio}"/>
-                            
-                            <Label x:Name="lbltonificacion" Text="{Binding tonificacion}"/>
-                            
-                            <Label x:Name="lblpiernas" Text="{Binding piernas}"/>
-                            
-                            <Label x:Name="lblestiramiento" Text="{Binding estiramiento}"/>
-
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding codigo}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="{Binding calentamiento}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="{Binding cardio}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="2"/>
+                                <Label Text="{Binding tonificacion}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="3"/>
+                                <Label Text="{Binding piernas}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="4"/>
+                                <Label Text="{Binding estiramiento}" TextColor="Blue" FontSize="8" Grid.Row="0" Grid.Column="5"/>
+                            </Grid>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
+        <Button x:Name="btnMostrar" Text="MOSTRAR" Clicked="btnMostrar_Clicked"/>
     </StackLayout>
 
 </ContentPage>
