@@ -16,7 +16,7 @@ namespace FitBody_Proyecto
 
         private const string Url = "http://192.168.1.6:8080/proyecto_fitbody/post.php";
         private readonly HttpClient client = new HttpClient();
-        private ObservableCollection<FitBody_Proyecto.Ws.Datos> _post;
+        private ObservableCollection<FitBody_Proyecto.Datos> _post;
         public MainPage()
         {
             InitializeComponent();
@@ -25,8 +25,8 @@ namespace FitBody_Proyecto
         private async void btnGet_Clicked(object sender, EventArgs e)
         {
             var content = await client.GetStringAsync(Url);
-            List<FitBody_Proyecto.Ws.Datos> posts = JsonConvert.DeserializeObject<List<FitBody_Proyecto.Ws.Datos>>(content);
-            _post = new ObservableCollection<FitBody_Proyecto.Ws.Datos>(posts);
+            List<FitBody_Proyecto.Datos> posts = JsonConvert.DeserializeObject<List<FitBody_Proyecto.Datos>>(content);
+            _post = new ObservableCollection<FitBody_Proyecto.Datos>(posts);
 
             MyListView.ItemsSource = posts;
         }
